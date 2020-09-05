@@ -6,8 +6,8 @@ import (
 
 	_ "github.com/lib/pq"
 
-	"github.com/nanopack/shaman/config"
-	shaman "github.com/nanopack/shaman/core/common"
+	"github.com/orcatools/shaman/config"
+	shaman "github.com/orcatools/shaman/core/common"
 )
 
 type postgresDb struct {

@@ -6,10 +6,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/nanobox-io/golang-scribble"
+	scribble "github.com/nanobox-io/golang-scribble"
 
-	"github.com/nanopack/shaman/config"
-	shaman "github.com/nanopack/shaman/core/common"
+	"github.com/orcatools/shaman/config"
+	shaman "github.com/orcatools/shaman/core/common"
 )
 
 type scribbleDb struct {

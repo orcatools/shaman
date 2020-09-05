@@ -3,9 +3,9 @@ package cache_test
 import (
 	"testing"
 
-	"github.com/nanopack/shaman/cache"
-	"github.com/nanopack/shaman/config"
-	shaman "github.com/nanopack/shaman/core/common"
+	"github.com/orcatools/shaman/cache"
+	"github.com/orcatools/shaman/config"
+	shaman "github.com/orcatools/shaman/core/common"
 )
 
 // test postgres cache init

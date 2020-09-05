@@ -12,7 +12,7 @@ import (
 	"github.com/gorilla/pat"
 	nanoauth "github.com/nanobox-io/golang-nanoauth"
 
-	"github.com/nanopack/shaman/config"
+	"github.com/orcatools/shaman/config"
 )
 
 type (
@@ -36,6 +36,7 @@ func Start() error {
 
 	// handle config.Insecure
 	if config.Insecure {
+		config.Log.Info("Hello World")
 		config.Log.Info("Shaman listening at http://%s...", config.ApiListen)
 		return fmt.Errorf("API stopped - %v", auth.ListenAndServe(config.ApiListen, config.ApiToken, routes()))
 	}

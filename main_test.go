@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nanopack/shaman/config"
+	"github.com/orcatools/shaman/config"
 )
 
 func TestMain(m *testing.M) {

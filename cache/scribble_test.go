@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/nanopack/shaman/cache"
-	"github.com/nanopack/shaman/config"
+	"github.com/orcatools/shaman/cache"
+	"github.com/orcatools/shaman/config"
 )
 
 // test scribble cache init
