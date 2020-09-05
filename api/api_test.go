@@ -14,9 +14,9 @@ import (
 
 	"github.com/jcelliott/lumber"
 
-	"github.com/nanopack/shaman/api"
-	"github.com/nanopack/shaman/config"
-	shaman "github.com/nanopack/shaman/core/common"
+	"github.com/orcatools/shaman/api"
+	"github.com/orcatools/shaman/config"
+	shaman "github.com/orcatools/shaman/core/common"
 )
 
 var (

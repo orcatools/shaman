@@ -4,10 +4,11 @@ import (
 	"bytes"
 	"encoding/gob"
 	"fmt"
+	"net/url"
 
 	bolt "github.com/etcd-io/bbolt"
-	"github.com/nanopack/shaman/config"
-	shaman "github.com/nanopack/shaman/core/common"
+	"github.com/orcatools/shaman/config"
+	shaman "github.com/orcatools/shaman/core/common"
 )
 
 const (
@@ -21,7 +22,11 @@ type boltDb struct {
 }
 
 func (client *boltDb) initialize() error {
-	db, err := bolt.Open(config.L2Connect, 0600, nil)
+	// fmt.Println("initializing boltdb")
+	// fmt.Println("config", config.L2Connect)
+	u, err := url.Parse(config.L2Connect)
+
+	db, err := bolt.Open(u.Path, 0600, nil)
 	if err != nil {
 		return err
 	}

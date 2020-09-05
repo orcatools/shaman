@@ -7,9 +7,9 @@ import (
 
 	"github.com/jcelliott/lumber"
 
-	"github.com/nanopack/shaman/config"
-	"github.com/nanopack/shaman/core"
-	sham "github.com/nanopack/shaman/core/common"
+	"github.com/orcatools/shaman/config"
+	shaman "github.com/orcatools/shaman/core"
+	sham "github.com/orcatools/shaman/core/common"
 )
 
 var (

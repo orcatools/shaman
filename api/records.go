@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/nanopack/shaman/core"
-	sham "github.com/nanopack/shaman/core/common"
+	shaman "github.com/orcatools/shaman/core"
+	sham "github.com/orcatools/shaman/core/common"
 )
 
 func createRecord(rw http.ResponseWriter, req *http.Request) {

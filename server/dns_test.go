@@ -9,10 +9,10 @@ import (
 	"github.com/jcelliott/lumber"
 	"github.com/miekg/dns"
 
-	"github.com/nanopack/shaman/config"
-	"github.com/nanopack/shaman/core"
-	sham "github.com/nanopack/shaman/core/common"
-	"github.com/nanopack/shaman/server"
+	"github.com/orcatools/shaman/config"
+	shaman "github.com/orcatools/shaman/core"
+	sham "github.com/orcatools/shaman/core/common"
+	"github.com/orcatools/shaman/server"
 )
 
 var nanopack = sham.Resource{Domain: "nanopack.io.", Records: []sham.Record{{Address: "127.0.0.1"}}}

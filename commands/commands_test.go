@@ -10,9 +10,9 @@ import (
 	"github.com/jcelliott/lumber"
 	"github.com/spf13/cobra"
 
-	"github.com/nanopack/shaman/api"
-	"github.com/nanopack/shaman/commands"
-	"github.com/nanopack/shaman/config"
+	"github.com/orcatools/shaman/api"
+	"github.com/orcatools/shaman/commands"
+	"github.com/orcatools/shaman/config"
 )
 
 func init() {

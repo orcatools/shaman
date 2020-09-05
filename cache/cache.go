@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/nanopack/shaman/config"
-	shaman "github.com/nanopack/shaman/core/common"
+	"github.com/orcatools/shaman/config"
+	shaman "github.com/orcatools/shaman/core/common"
 )
 
 var (
@@ -35,18 +35,25 @@ func Initialize() error {
 
 	switch u.Scheme {
 	case "scribble":
+		config.Log.Debug("using scribble storage")
 		storage = &scribbleDb{}
 	case "postgres":
+		config.Log.Debug("using postgresql storage")
 		storage = &postgresDb{}
 	case "postgresql":
+		config.Log.Debug("using postgresql storage")
 		storage = &postgresDb{}
 	case "consul":
+		config.Log.Debug("using consul storage")
 		storage = &consulDb{}
 	case "boltdb":
+		config.Log.Debug("using boltdb storage")
 		storage = &boltDb{}
 	case "none":
+		config.Log.Debug("not using storage")
 		storage = nil
 	default:
+		config.Log.Debug("using default storage")
 		storage = &scribbleDb{}
 	}
 

@@ -25,10 +25,10 @@ var (
 	DnsListen          = "127.0.0.1:53"              // Listen address for DNS requests (ip:port)
 	DnsFallBack        = ""                          // fallback dns server if record not found in cache, not used if empty
 
-	LogLevel   = "INFO" // Log level to output [fatal|error|info|debug|trace]
-	Server     = false  // Run in server mode
-	ConfigFile = ""     // Configuration file to load
-	Version    = false  // Print version info and exit
+	LogLevel   = "DEBUG" // Log level to output [fatal|error|info|debug|trace]
+	Server     = false   // Run in server mode
+	ConfigFile = ""      // Configuration file to load
+	Version    = false   // Print version info and exit
 
 	Log lumber.Logger // Central logger for shaman
 )
